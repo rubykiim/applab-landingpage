@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100vh;
 }
 
 .image {
@@ -48,6 +49,8 @@
   position: relative;
   top: 70px;
   left: 670px;
+
+  width: 700px;
 }
 
 .slogan_2 {
@@ -56,6 +59,8 @@
   position: relative;
   top: 70px;
   left: 670px;
+
+  width: 700px;
 }
 
 span {
