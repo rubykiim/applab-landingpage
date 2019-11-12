@@ -2,21 +2,77 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.image {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+  position: relative;
+  z-index: 0;
+  left: 80px;
+  top: 20px;
+
+  width: 200px;
 }
 
-.App-link {
-  color: #09d3ac;
+.EcoBox {
+  margin: 0;
+  /* font-family: 'Abril Fatface', cursive; */
+  /* font-family: 'Rajdhani', sans-serif; */
+  /* font-family: 'Zilla Slab Highlight', cursive; */
+  /* font-family: 'Major Mono Display', monospace;  */
+  font-family: 'Exo', sans-serif;
+  font-size: 50px;
+  color: #b8b6a4cc;
+}
+
+.nav_bar {
+  margin: 0;
+
+  position: absolute;
+  top: 25px;
+  left: 670px;
+
+  font-family: 'Exo', sans-serif;
+  font-size: 20px;
+  color: #bdbba9cc;
+
+}
+
+.slogan_1 {
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  position: relative;
+  top: 70px;
+  left: 670px;
+}
+
+.slogan_2 {
+  font-family: 'Exo', sans-serif;
+  font-size: 27px;
+  position: relative;
+  top: 70px;
+  left: 670px;
+}
+
+span {
+  color: rgb(106, 155, 89);
+  font-size: 55px;
+}
+
+input {
+  width: 215px;
+  height: 30px;
+
+  font-size: 15px;
+
+  position: relative;
+  top: 70px;
+  left: 670px;
+  
+  border: 2px solid white;
+  border-radius: 11px;
 }
