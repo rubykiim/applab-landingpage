@@ -1,34 +1,74 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
+import bg1 from "../src/thisone.jpg";
+import bg2 from "../src/landingpg-option2.jpg";
+import Youtube from 'react-youtube';
 
 function App() {
+  const [active, setActive] = useState("");
+
+  function changeContent(e) {
+    let yOrn = e.target.response;
+    setActive(yOrn);
+  }
+
   return (
     <div>
+      <div>
       <img
-        className="image"
-        src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        id="image_1"
+        src={bg1}
       ></img>
+      <img
+        id="image_2"
+        src={bg2}
+      ></img>
+      </div>
 
-      <div className="logo">
+
+      {/* <div className="logo">
         <p className="EcoBox">EcoBox</p>
-      </div>
+      </div> */}
       
-      <div className="nav_bar">
+      {/* <div className="nav_bar">
+        <h3>The Problem</h3>
+        <h3>Our Solution</h3>
         <h3>Contact Us</h3>
-      </div>
+      </div> */}
 
       <div className="slogan_1">
-        <p>Love to shop online,</p>
-        <p>but still want to be eco-friendly?</p>
+        <p>Love to <span>shop</span> online,</p>
+        <p>but still want to stay <span>eco-friendly</span> <span id="qmark">?</span></p>
+      </div>
+      
+      <div>
+        <a href="#vid">
+          <Button response="View solution" />
+        </a>
       </div>
 
-      <div className="slogan_2">
-        <p> <span>EcoBox</span>, your best choice for reusable packaging</p>
+      <Youtube id="vid" videoId="ikXoU8VjyU0"></Youtube>
+
+      <div className="problem">
+        <p>While e-commerce shopping is convenient,
+          it generates enormous amount of waste every second.
+        </p>
       </div>
+
+      <div className="solution">
+        <p><span>EcoBox</span>, a reusable packaging service, 
+        will be your best alternative for reducing the waste.
+        </p>
+      </div>
+
+      <h1 id="instigator">Start with 1-month FREE Trial!</h1>
       <Input></Input>
+      <button id="submit-btn">Submit</button>
+      
     </div>
   );
 }
+
 
 function Input() {
   return (
@@ -36,9 +76,9 @@ function Input() {
   );
 }
 
-function Button() {
+function Button(props) {
   return (
-    <button></button>
+    <button className="button">{props.response}</button>
   );
 }
 
