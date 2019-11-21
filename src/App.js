@@ -5,13 +5,6 @@ import bg2 from "../src/landingpg-option2.jpg";
 import Youtube from 'react-youtube';
 
 function App() {
-  const [active, setActive] = useState("");
-
-  function changeContent(e) {
-    let yOrn = e.target.response;
-    setActive(yOrn);
-  }
-
   return (
     <div>
       <div>
