@@ -25,15 +25,8 @@ function App() {
       ></img>
       </div>
 
-
       {/* <div className="logo">
         <p className="EcoBox">EcoBox</p>
-      </div> */}
-      
-      {/* <div className="nav_bar">
-        <h3>The Problem</h3>
-        <h3>Our Solution</h3>
-        <h3>Contact Us</h3>
       </div> */}
 
       <div className="slogan_1">
@@ -68,7 +61,6 @@ function App() {
     </div>
   );
 }
-
 
 function Input() {
   return (
