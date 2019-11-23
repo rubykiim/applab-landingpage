@@ -8,6 +8,7 @@
 
 #image_2 {
   top: 100%;
+ 
 }
 
 .slogan_1 {
@@ -18,6 +19,7 @@
   left: 6rem;
 
   width: 1000px;
+  color: rbg(66,85,89);
 }
 
 p {
@@ -27,7 +29,7 @@ p {
 }
 
 span {
-  color: rgb(106, 155, 89);
+  color:rgb(106, 155, 89); 
   font-size: 60px;
 }
 
@@ -41,6 +43,7 @@ span {
   left: 38rem;
 
   width: 350px;
+  color: rgb(66,85,89);
 }
 
 input {
@@ -57,6 +60,9 @@ input {
   
   border: none;
   border-radius: 11px;
+  color: rgb(242,185,80)
+ 
+ 
 }
 
 .button {
@@ -74,6 +80,7 @@ input {
   margin-right: 300px;
   border: none;
   border-radius: 15px;
+  color: rgb(242,185,80)
 }
 
 #submit-btn {
@@ -92,20 +99,21 @@ input {
   margin-right: 300px;
   border: none;
   border-radius: 15px;
+  color: rgb(242,185,80)
 }
 
 .button:active {
-  color: white;
-  background-color: rgb(106, 155, 89);
+  color:white;
+  background-color: rgb(215,210,217);
 }
 
 #submit-btn:active {
   color: white;
-  background-color: rgb(106, 155, 89);
+  background-color: rgb(215,210,217);
 }
 
 #qmark {
-  color: black;
+  color: rgb(242,185,80);
   animation: twinkle infinite;
   animation-duration: 2s;
   /* animation-delay: 0.5s; */
@@ -126,6 +134,7 @@ input {
   left: 4rem;
   width: 480px;
   height: 300px;
+ 
 }
 
 .problem {
@@ -136,6 +145,8 @@ input {
   z-index: 2;
   top: 15rem;
   left: 4rem;
+  color: rgb(66,85,89);
+  
 
   width: 600px;
 }
@@ -143,6 +154,8 @@ input {
 .solution {
   font-family: 'Exo', sans-serif;
   font-size: 30px;
+  color: rgb(66,85,89);
+  
 
   position: relative;
   z-index: 2;
@@ -151,4 +164,3 @@ input {
 
   width: 670px;
 }
-

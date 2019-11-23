@@ -57,7 +57,7 @@ function App() {
 
 function Input() {
   return (
-    <input placeholder=" Enter your email to learn more" type="text" />
+    <input placeholder="Enter your email to learn more" type="text" />
   );
 }
 
