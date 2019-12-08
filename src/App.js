@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./App.css";
 import bg1 from "../src/thisone.jpg";
 import bg2 from "../src/landingpg-option2.jpg";
@@ -8,19 +8,9 @@ function App() {
   return (
     <div>
       <div>
-      <img
-        id="image_1"
-        src={bg1}
-      ></img>
-      <img
-        id="image_2"
-        src={bg2}
-      ></img>
+      <img id="image_1" src={bg1}/>
+      <img id="image_2" src={bg2}/>
       </div>
-
-      {/* <div className="logo">
-        <p className="EcoBox">EcoBox</p>
-      </div> */}
 
       <div className="slogan_1">
         <p>Love to <span>shop</span> online,</p>
@@ -29,11 +19,11 @@ function App() {
       
       <div>
         <a href="#vid">
-          <Button response="View solution" />
+          <Button response="View solution"/>
         </a>
       </div>
 
-      <Youtube id="vid" videoId="ikXoU8VjyU0"></Youtube>
+      <Youtube id="vid" videoId="ikXoU8VjyU0"/>
 
       <div className="problem">
         <p>While e-commerce shopping is convenient,
@@ -42,15 +32,15 @@ function App() {
       </div>
 
       <div className="solution">
-        <p><span>EcoBox</span>, a reusable packaging service, 
+        <p><span>EcoBox</span>
+        , a reusable packaging service, 
         will be your best alternative for reducing the waste.
         </p>
       </div>
 
       <h1 id="instigator">Start with 1-month FREE Trial!</h1>
-      <Input></Input>
+      <Input/>
       <button id="submit-btn">Submit</button>
-      
     </div>
   );
 }

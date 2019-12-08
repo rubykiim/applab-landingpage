@@ -1,6 +1,6 @@
 #image_1, #image_2 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   opacity: 0.8;
   position: absolute;
   z-index: -1;
@@ -8,7 +8,6 @@
 
 #image_2 {
   top: 100%;
- 
 }
 
 .slogan_1 {
@@ -19,7 +18,7 @@
   left: 6rem;
 
   width: 1000px;
-  color: rbg(66,85,89);
+  color: rgb(66,85,89);
 }
 
 p {
@@ -60,9 +59,7 @@ input {
   
   border: none;
   border-radius: 11px;
-  color: rgb(242,185,80)
- 
- 
+  color: rgb(247, 174, 38);
 }
 
 .button {
@@ -80,7 +77,7 @@ input {
   margin-right: 300px;
   border: none;
   border-radius: 15px;
-  color: rgb(242,185,80)
+  color: rgb(247, 174, 38)
 }
 
 #submit-btn {
@@ -113,17 +110,14 @@ input {
 }
 
 #qmark {
-  color: rgb(242,185,80);
+  color: rgb(66,85,89);
   animation: twinkle infinite;
   animation-duration: 2s;
-  /* animation-delay: 0.5s; */
 }
 
 @keyframes twinkle {
   0% {opacity: 1;}
-  /* 30% {opacity: 0.2;} */
   50% {opacity: 0.2;}
-  /* 70% {opacity: 0.7;} */
   100% {opacity: 1;}
 }
 
@@ -132,9 +126,8 @@ input {
   z-index: 2;
   top: 58rem;
   left: 4rem;
-  width: 480px;
-  height: 300px;
- 
+  width: 30em;
+  height: 18.7em;
 }
 
 .problem {
@@ -146,7 +139,6 @@ input {
   top: 15rem;
   left: 4rem;
   color: rgb(66,85,89);
-  
 
   width: 600px;
 }
@@ -155,7 +147,6 @@ input {
   font-family: 'Exo', sans-serif;
   font-size: 30px;
   color: rgb(66,85,89);
-  
 
   position: relative;
   z-index: 2;
@@ -163,4 +154,43 @@ input {
   left: 4rem;
 
   width: 670px;
+}
+
+@media only screen and (min-width: 1441px) {
+  .slogan_1 {
+    font-size: 75px;
+    width: 1500px;
+    top: 1.5em;
+  }
+  span {
+    font-size: 75px;
+  }
+  .button {
+    top: 6em;
+    left: 54em;
+    width: 200px;
+    height: 55px;
+  }
+  .problem,.solution {
+    top: 10em;
+    font-size: 2.5em;
+    width: 790px;
+  }
+  #vid {
+    top: 80.6em;
+    width: 35em;
+    height: 24em;
+  }
+  #instigator {
+    top: 23em;
+    left: 29em;
+  }
+  input {
+    top: 39em;
+    left: 49em;
+  }
+  #submit-btn {
+    top: 45em;
+    left: 58em;
+  }
 }
